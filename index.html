@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Pourquoi les boutiques de prêt-à-porter ont tout à gagner avec la détaxe ? | SolPay — audit de structure</title>
+<meta name="description" content="Version annotée de l'article SolPay sur la détaxe en boutique de prêt-à-porter : les éléments structurels et SEO/GEO à ajouter, poste par poste.">
+<link rel="canonical" href="https://solpay.com/ressources/pourquoi-les-boutiques-de-pret-a-porter-ont-tout-a-gagner-avec-la-detaxe/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pourquoi les boutiques de prêt-à-porter ont tout à gagner avec la détaxe ? — audit de structure">
+<meta property="article:published_time" content="2026-07-15T12:20:50+00:00">
+<meta property="article:modified_time" content="2026-08-06T15:24:40+00:00">
+
+<style>
+:root{
+  --blue:#1b6ef3; --dark-blue:#0f4fc2;
+  --black:#101010; --white:#ffffff;
+  --white-beige:#fbfaf9; --light-beige:#f3ede8; --beige:#e7ddd3; --dark-beige:#d8c9b8;
+  --grey-1:#d6d2ce; --grey-2:#8c8680; --grey-3:#4a4642; --white-grey:#e9e5e1;
+  --green:#1eb883; --red:#e0433c;
+  --r4:4px; --r8:8px; --r12:12px; --r16:16px; --r20:20px; --r32:32px; --pill:1000px;
+  --title:"Season Sans","Trebuchet MS",sans-serif;
+  --sub:"Season Sans","Trebuchet MS",sans-serif;
+  --body:"Inter",Verdana,sans-serif;
+  --mono:ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --wrap:1180px; --col:720px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font-family:var(--body);color:var(--black);
+  background:linear-gradient(180deg,var(--white) 0%,var(--white-beige) 380px,var(--light-beige) 100%);
+  background-attachment:fixed;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--title);font-weight:700;letter-spacing:-.01em;line-height:1.15;margin:0}
+h1{font-size:clamp(30px,4.6vw,50px)}
+h2{font-size:clamp(24px,3vw,32px);margin:52px 0 16px}
+h3{font-size:clamp(19px,2.1vw,22px);margin:30px 0 10px;font-weight:600}
+p{margin:0 0 18px}
+a{color:var(--black);text-decoration:underline;text-decoration-color:var(--beige);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{text-decoration-color:var(--blue)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.mono{font-family:var(--mono);font-size:13px;letter-spacing:.02em}
+
+.nav{position:sticky;top:16px;z-index:60;margin:16px auto 0;max-width:var(--wrap);padding:0 24px}
+.nav-in{display:flex;align-items:center;gap:22px;background:var(--white);border-radius:var(--pill);
+  padding:10px 22px;box-shadow:0 2px 20px rgba(16,16,16,.07);border:1px solid var(--white-grey)}
+.logo{font-family:var(--title);font-weight:700;font-size:19px;text-decoration:none;color:var(--black)}
+.tagline{margin-left:auto;font-size:13.5px;color:var(--grey-2)}
+
+.anno-bar{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;gap:8px;align-items:center;
+  background:var(--black);color:var(--white);border-radius:var(--pill);padding:9px 9px 9px 18px;
+  box-shadow:0 8px 28px rgba(16,16,16,.28);font-size:14px}
+.anno-bar button{font-family:var(--body);font-weight:700;font-size:13px;cursor:pointer;border:0;
+  border-radius:var(--pill);padding:8px 16px;background:var(--blue);color:var(--white)}
+.anno{display:none}
+body.anno-on .anno{display:block}
+body.anno-on [data-fix]{position:relative;outline:1.5px dashed var(--blue);outline-offset:10px;border-radius:var(--r8)}
+.anno{margin:14px 0 26px;border-left:3px solid var(--blue);background:rgba(27,110,243,.07);
+  border-radius:0 var(--r8) var(--r8) 0;padding:13px 16px;font-size:14.5px;line-height:1.55;color:var(--grey-3)}
+.anno b{color:var(--black);font-weight:600}
+.anno .tag{display:inline-block;background:var(--black);color:#8fb8fb;font-family:var(--mono);
+  font-size:11px;padding:2px 8px;border-radius:var(--r4);margin-right:8px;vertical-align:1px}
+.anno .was{display:block;margin-top:6px;color:var(--red)}
+.anno .was::before{content:"Constat verifie — ";font-weight:600}
+.anno .ok{display:block;margin-top:6px;color:var(--green)}
+.anno .ok::before{content:"Deja en place — ";font-weight:600}
+
+.panel{background:var(--black);color:#efece8;border-radius:var(--r32);padding:44px 40px;margin:34px 0 8px}
+.panel h2{color:var(--white);margin:0 0 10px;font-size:clamp(22px,2.8vw,30px)}
+.panel p{color:var(--grey-1);max-width:760px}
+.fixgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin-top:26px;padding:0}
+.fixgrid li{list-style:none;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--r12);padding:12px 14px;font-size:14.5px;color:#efece8}
+.fixgrid li span{display:block;font-family:var(--mono);font-size:11px;color:#8fb8fb;margin-bottom:3px}
+
+.shell{display:grid;grid-template-columns:minmax(0,var(--col)) 300px;gap:56px;align-items:start;margin:40px 0 0}
+@media(max-width:1040px){.shell{grid-template-columns:minmax(0,1fr)}.rail{display:none}}
+.rail{position:sticky;top:110px}
+.rail-card{background:var(--white);border:1px solid var(--white-grey);border-radius:var(--r16);padding:20px 22px;margin-bottom:16px}
+.rail-card h4{font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--grey-2);margin:0 0 12px}
+.toc{list-style:none;margin:0;padding:0;font-size:15px;line-height:1.35}
+.toc li{margin:0 0 10px}
+.toc a{text-decoration:none;color:var(--grey-3);border-left:2px solid var(--white-grey);padding-left:12px;display:block}
+.toc a:hover{color:var(--black);border-left-color:var(--blue)}
+
+.crumb{font-size:14px;color:var(--grey-2);margin:38px 0 22px}
+.crumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0}
+.crumb a{color:var(--grey-2);text-decoration:none}
+.crumb a:hover{color:var(--black)}
+.crumb li+li::before{content:"/";margin-right:8px;color:var(--grey-1)}
+.crumb [aria-current]{color:var(--black)}
+
+.eyebrow{display:inline-block;background:var(--beige);color:var(--grey-3);border-radius:var(--pill);
+  padding:6px 14px;font-weight:600;font-size:13px;letter-spacing:.02em;margin-bottom:20px}
+.standfirst{font-size:20px;line-height:1.5;color:var(--grey-3);margin:20px 0 0;max-width:660px}
+.byline{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin:28px 0 0;padding:18px 0 0;border-top:1px solid var(--white-grey);font-size:14.5px;color:var(--grey-3)}
+.byline .who{display:flex;align-items:center;gap:11px}
+.avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--dark-blue));
+  display:grid;place-items:center;font-family:var(--title);font-weight:700;font-size:15px;color:var(--white);flex:none}
+.byline strong{font-weight:600;color:var(--black);display:block;line-height:1.3}
+.byline .role{font-size:13px;color:var(--grey-2)}
+.dot{width:4px;height:4px;border-radius:50%;background:var(--grey-1);flex:none}
+.pillmeta{display:inline-flex;align-items:center;gap:7px;background:var(--white);border:1px solid var(--white-grey);
+  border-radius:var(--pill);padding:6px 13px;font-size:13.5px}
+.pillmeta.fresh{border-color:var(--blue);background:rgba(27,110,243,.09);font-weight:600}
+
+figure{margin:32px 0}
+figure img{width:100%;height:auto;display:block;border-radius:var(--r20);background:var(--white-grey)}
+figcaption{font-size:13.5px;color:var(--grey-2);margin-top:11px;line-height:1.45}
+
+.takeaways{background:var(--white);border:1px solid var(--dark-beige);border-left:4px solid var(--blue);
+  border-radius:var(--r16);padding:26px 28px;margin:36px 0}
+.takeaways h2{margin:0 0 6px;font-size:20px;font-weight:600;letter-spacing:0}
+.takeaways .answer{background:var(--light-beige);border-radius:var(--r12);padding:15px 17px;margin:14px 0 18px;font-size:16.5px}
+.takeaways .answer b{font-weight:600}
+.takeaways ul{margin:0;padding-left:20px}
+.takeaways li{margin-bottom:9px}
+.takeaways li::marker{color:var(--blue)}
+.updated-note{font-size:13.5px;color:var(--grey-2);margin:14px 0 0;padding-top:13px;border-top:1px solid var(--white-grey)}
+
+.tablewrap{overflow-x:auto;margin:26px 0;border:1px solid var(--white-grey);border-radius:var(--r16);background:var(--white)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15.5px}
+caption{text-align:left;padding:16px 20px 0;font-weight:600;font-size:15px;color:var(--grey-3)}
+th,td{padding:13px 20px;text-align:left;border-bottom:1px solid var(--white-grey);vertical-align:top}
+thead th{font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--grey-2);background:var(--white-beige)}
+tbody tr:last-child td{border-bottom:0}
+
+.callout{border:1px solid var(--white-grey);background:var(--white);border-radius:var(--r16);padding:20px 22px;margin:28px 0;font-size:15.5px}
+.callout .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);display:block;margin-bottom:7px}
+.callout p:last-child{margin-bottom:0}
+
+.mesh{border:1px solid var(--white-grey);background:var(--white);border-radius:var(--r16);padding:22px 24px;margin:34px 0}
+.mesh h4{font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--grey-2);margin:0 0 14px}
+.mesh ul{list-style:none;margin:0;padding:0}
+.mesh li{padding:10px 0;border-bottom:1px solid var(--white-beige)}
+.mesh li:last-child{border-bottom:0;padding-bottom:0}
+.mesh a{font-weight:600;text-decoration:none;border-bottom:2px solid var(--beige)}
+.mesh a:hover{border-bottom-color:var(--blue)}
+.mesh .ctx{display:block;font-size:14px;color:var(--grey-2);margin-top:3px}
+
+.faq details{background:var(--white);border:1px solid var(--white-grey);border-radius:var(--r12);margin-bottom:10px;padding:0}
+.faq summary{cursor:pointer;padding:17px 20px;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--blue);font-size:22px;line-height:1;flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 20px 18px;color:var(--grey-3);font-size:16px}
+.faq .a p:last-child{margin-bottom:0}
+
+.sources{font-size:15px;color:var(--grey-3)}
+.sources ol{padding-left:20px;margin:0}
+.sources li{margin-bottom:8px}
+
+.authorbox{background:var(--white);border:1px solid var(--white-grey);border-radius:var(--r20);padding:28px;margin:44px 0 0;display:flex;gap:22px}
+.authorbox .avatar{width:76px;height:76px;font-size:24px}
+.authorbox h4{font-family:var(--title);font-weight:700;font-size:20px;margin:0 0 2px}
+.authorbox .role{color:var(--grey-2);font-size:14.5px;margin-bottom:11px}
+.authorbox p{font-size:15.5px;color:var(--grey-3);margin-bottom:12px}
+.authorlinks{font-size:14px;display:flex;gap:16px;flex-wrap:wrap}
+@media(max-width:620px){.authorbox{flex-direction:column}}
+
+.changelog{margin:34px 0 0;border:1px solid var(--white-grey);border-radius:var(--r16);background:var(--white)}
+.changelog summary{cursor:pointer;padding:16px 20px;font-weight:600;font-size:15px;list-style:none}
+.changelog summary::-webkit-details-marker{display:none}
+.changelog summary::before{content:"▸ ";color:var(--blue)}
+.changelog[open] summary::before{content:"▾ "}
+.changelog .body{padding:0 20px 18px;font-size:15px;color:var(--grey-3)}
+.changelog dl{margin:0}
+.changelog dt{font-family:var(--mono);font-size:12.5px;color:var(--grey-2);margin-top:12px}
+.changelog dd{margin:2px 0 0}
+
+.cta{background:var(--blue);border-radius:var(--r32);padding:42px 40px;margin:52px 0 0;
+  display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.cta h3{font-family:var(--title);font-weight:700;font-size:clamp(22px,2.8vw,28px);margin:0 0 8px;letter-spacing:-.01em;color:var(--white)}
+.cta p{margin:0;color:rgba(255,255,255,.82);max-width:480px}
+.cta .btn{display:inline-block;border-radius:var(--pill);padding:12px 24px;font-weight:700;font-size:15px;text-decoration:none;background:var(--black);color:var(--white)}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:22px}
+.card{background:var(--white);border:1px solid var(--white-grey);border-radius:var(--r16);padding:20px;text-decoration:none;display:block}
+.card:hover{border-color:var(--dark-beige)}
+.card .k{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+.card h4{font-weight:600;font-size:17px;margin:8px 0 6px;line-height:1.3;color:var(--black)}
+.card p{font-size:14px;color:var(--grey-2);margin:0}
+
+.schema{margin:34px 0 0}
+.schema summary{cursor:pointer;font-weight:600;font-size:15px;padding:14px 18px;
+  background:var(--black);color:var(--white);border-radius:var(--r12);list-style:none}
+.schema summary::-webkit-details-marker{display:none}
+.schema pre{background:var(--black);color:#e9e2dd;border-radius:0 0 var(--r12) var(--r12);margin:0;
+  padding:18px;overflow-x:auto;font-family:var(--mono);font-size:12.5px;line-height:1.6}
+.schema[open] summary{border-radius:var(--r12) var(--r12) 0 0}
+
+footer{margin-top:80px;padding:40px 0 60px;border-top:1px solid var(--dark-beige);font-size:14px;color:var(--grey-2)}
+footer a{color:var(--grey-3)}
+</style>
+</head>
+<body class="anno-on">
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="#">SolPay</a>
+    <span class="tagline">Maquette d'audit datashake — non publiée sur solpay.com</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="panel anno">
+    <h2>Version annotée — article "Boutiques de prêt-à-porter et détaxe"</h2>
+    <p>Reprise exacte du contenu réel de l'article publié sur <span class="mono">solpay.com/ressources/pourquoi-les-boutiques-de-pret-a-porter-ont-tout-a-gagner-avec-la-detaxe/</span>,
+       avec les éléments structurels et SEO/GEO à ajouter ou corriger. Chaque bloc encadré répond à un constat vérifié en direct sur la page en ligne.
+       Désactivez les annotations (bouton en bas à droite) pour voir le rendu propre que verrait un lecteur.</p>
+    <ul class="fixgrid">
+      <li><span>FIX 01</span>Dates de publication et de mise à jour affichées</li>
+      <li><span>FIX 02</span>Auteur affiché sur la page (E-E-A-T)</li>
+      <li><span>FIX 03</span>Encart réponse directe en haut d'article</li>
+      <li><span>FIX 04</span>Temps de lecture estimé</li>
+      <li><span>FIX 05</span>Tableau structurant</li>
+      <li><span>FIX 06</span>FAQ marquée en FAQPage (l'accordéon existe déjà)</li>
+      <li><span>FIX 07</span>Sources avec texte d'ancre descriptif</li>
+      <li><span>FIX 08</span>Maillage contextuel dans le corps de texte</li>
+      <li><span>FIX 09</span>Historique de mise à jour public</li>
+      <li><span>FIX 10</span>Schema Article/Person/FAQPage complet</li>
+    </ul>
+  </section>
+
+  <nav class="crumb" aria-label="Fil d'ariane">
+    <ol>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Ressources</a></li>
+      <li aria-current="page">Pourquoi les boutiques de prêt-à-porter ont tout à gagner avec la détaxe ?</li>
+    </ol>
+  </nav>
+
+  <div class="shell">
+
+  <main>
+  <article>
+
+    <span class="eyebrow">Ressources — Prêt-à-porter</span>
+    <h1>Pourquoi les boutiques de prêt-à-porter ont tout à gagner avec la détaxe ?</h1>
+    <p class="standfirst">La France reste une destination shopping majeure, et la mode en est l'un des moteurs clés.
+      Pour les touristes internationaux résidant hors Union européenne, acheter en France, c'est accéder à un
+      savoir-faire, à des marques iconiques… et à un avantage décisif : la détaxe.</p>
+
+    <div class="byline" data-fix>
+      <span class="who">
+        <span class="avatar" aria-hidden="true">IA</span>
+        <span><strong>Iliana Ayouzy</strong>
+              <span class="role">Auteure — rôle à préciser par SolPay</span></span>
+      </span>
+      <span class="dot"></span>
+      <span class="pillmeta">Publié le <time datetime="2026-07-15">15 juillet 2026</time></span>
+      <span class="pillmeta fresh">Mis à jour le <time datetime="2026-08-06">6 août 2026</time></span>
+      <span class="pillmeta">5 min de lecture</span>
+    </div>
+    <div class="anno"><span class="tag">FIX 01 · 02 · 04</span><b>Bloc signature.</b> Une seule ligne porte les trois
+      signaux absents aujourd'hui : un auteur nommé, les deux dates en <span class="mono">&lt;time datetime&gt;</span>
+      lisible par les moteurs, et un temps de lecture.
+      <span class="ok">La date de publication (15 juillet 2026) et de mise à jour (6 août 2026) existent déjà dans le
+      code de la page, tout comme le nom de l'auteure (Iliana Ayouzy). Elles ne sont simplement affichées nulle part
+      à l'écran.</span>
+      <span class="was">Aucune date, aucun auteur, aucun temps de lecture visibles pour le lecteur. Sur un sujet où
+      les règles de détaxe évoluent, rien ne permet de savoir si la page est à jour, et Google n'a aucune entité
+      auteur à rattacher au contenu.</span></div>
+
+    <figure>
+      <img src="https://solpay.com/wp-content/uploads/2026/03/freepik__expand__42424.jpeg" alt="Boutique de prêt-à-porter avec cliente internationale en train de finaliser un achat" width="1200" height="675" loading="eager">
+      <figcaption>Image déjà présente sur l'article original, conservée ici à l'identique.</figcaption>
+    </figure>
+
+    <section class="takeaways" data-fix>
+      <h2>À retenir</h2>
+      <div class="answer">
+        <b>Réponse directe :</b> pour une boutique de prêt-à-porter en zone touristique, la détaxe est un levier
+        commercial qui déclenche l'achat, augmente le panier moyen des visiteurs hors Union européenne et favorise
+        la montée en gamme, à condition que le parcours en caisse reste simple et rapide.
+      </div>
+      <ul>
+        <li>Les touristes hors UE ont un panier moyen plus élevé que les touristes européens, avec une appétence
+          marquée pour les achats premium en prêt-à-porter.</li>
+        <li>Le seuil de détaxe est de 100,01 € TTC d'achats le même jour chez un même commerçant.</li>
+        <li>Un parcours de détaxe lent ou complexe en caisse peut faire perdre la vente ; un parcours digitalisé la
+          transforme en argument de vente.</li>
+        <li>SolPay, opérateur agréé par la douane française depuis 2008, propose une solution digitale gratuite pour
+          les commerçants.</li>
+      </ul>
+      <p class="updated-note">Contenu vérifié sur la page en ligne le
+        <time datetime="2026-09-24">24 septembre 2026</time>.</p>
+    </section>
+    <div class="anno"><span class="tag">FIX 03</span><b>Encart à retenir + réponse directe.</b> Positionné avant le
+      corps de texte, il ouvre sur une réponse autonome de 40 à 60 mots qui nomme le sujet et la conclusion. C'est ce
+      paragraphe qu'un Aperçu IA, ChatGPT ou Perplexity reprend en premier.
+      <span class="was">Aucun encart de ce type sur l'article. La réponse à "pourquoi la détaxe est utile à une
+      boutique de mode" est diluée sur 950 mots de texte courant, sans paragraphe autonome à citer.</span></div>
+
+    <h2 id="pilier">La mode, un pilier des dépenses touristiques internationales</h2>
+    <p>Selon Atout France, le shopping représente l'un des premiers postes de dépenses des touristes étrangers en
+      France, en particulier pour les visiteurs long-courriers (États-Unis, Moyen-Orient, Asie). La mode, le luxe et
+      les accessoires figurent systématiquement en tête des achats réalisés lors des séjours touristiques.</p>
+    <p>Acheter "là où la marque est née" reste un puissant facteur d'attractivité. D'après les données publiques du
+      tourisme, les visiteurs hors UE ont un panier moyen nettement supérieur à celui des touristes européens, et
+      sont plus enclins à réaliser des achats premium, notamment dans les boutiques de mode et concept stores.</p>
+
+    <h2 id="levier">La détaxe, un levier clé pour déclencher et augmenter l'achat</h2>
+    <p>En France, les touristes résidant en dehors de l'Union européenne peuvent bénéficier de la détaxe sur leurs
+      achats à partir de 100,01 € TTC minimum, effectués le même jour chez un même commerçant. Grâce à la détaxe, les
+      clients internationaux peuvent récupérer une partie du montant de leurs achats, offrant un avantage financier
+      immédiat qui influence considérablement leur décision d'achat.</p>
+
+    <div class="tablewrap" data-fix>
+      <table>
+        <caption>Ce que la détaxe change concrètement pour une boutique de prêt-à-porter</caption>
+        <thead>
+          <tr><th scope="col">Effet</th><th scope="col">Mécanisme décrit dans l'article</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Déclenchement de l'achat</th><td>L'avantage financier immédiat influence la décision d'achat du client international.</td></tr>
+          <tr><th scope="row">Panier moyen</th><td>Le client complète son panier pour atteindre le seuil de détaxe, ce qui augmente mécaniquement le montant moyen des achats.</td></tr>
+          <tr><th scope="row">Montée en gamme</th><td>La détaxe favorise l'ajout de produits à plus forte valeur, pièce premium ou accessoire iconique.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="anno"><span class="tag">FIX 05</span><b>Tableau structurant.</b> Reprend les trois effets déjà décrits
+      dans le texte courant et les pose en unité extractible. Les tableaux sont la structure la plus reprise dans les
+      Aperçus IA sur les requêtes de comparaison ou de bénéfices.
+      <span class="was">Zéro tableau sur la page. Les trois effets de la détaxe (déclenchement, panier moyen, montée
+      en gamme) existent déjà dans le texte, mais noyés dans un paragraphe de prose continue.</span></div>
+
+    <h2 id="experience">Un enjeu d'expérience en boutique</h2>
+    <p>Côté terrain, les commerçants le savent : un parcours de détaxe trop complexe ou trop lent peut freiner
+      l'achat, créer de la frustration ou faire perdre une vente, surtout auprès de touristes exigeants. À l'inverse,
+      un parcours simple, fluide et digitalisé transforme la détaxe en véritable argument de vente.</p>
+
+    <h2 id="solpay">Comment SolPay accompagne les boutiques de mode</h2>
+    <p>En tant qu'opérateur de détaxe agréé par la douane française depuis 2008, SolPay aide les boutiques de
+      prêt-à-porter à transformer la détaxe en levier de performance, sans alourdir l'opérationnel.</p>
+    <ul>
+      <li>Une solution digitale, performante et gratuite pour les commerçants, pensée pour simplifier la détaxe.</li>
+      <li>Une expérience premium pour les équipes comme pour les clients internationaux.</li>
+      <li>Un accompagnement de proximité, avec un service client 7j/7 en français et en anglais.</li>
+      <li>Un processus de détaxe entièrement fluidifié, moins de friction en caisse, une meilleure conversion des
+        touristes hors UE.</li>
+    </ul>
+
+    <h2 id="resume">En résumé</h2>
+    <p>Dans ce parcours, la détaxe joue un rôle clé à condition qu'elle soit simple, rapide et sans friction. En
+      transformant une obligation administrative en levier commercial, SolPay permet aux boutiques de mode de capter
+      pleinement le potentiel des clients hors UE, d'augmenter le panier moyen et d'offrir une expérience premium.</p>
+
+    <aside class="mesh" data-fix>
+      <h4>Maillage contextuel proposé</h4>
+      <ul>
+        <li><a href="#">Duty Free vs Tax Free : quelle est la différence ?</a>
+            <span class="ctx">Utile pour un lecteur qui confond encore les deux mécanismes avant de lire la suite.</span></li>
+        <li><a href="#">La détaxe en pharmacie : un atout méconnu pour les officines</a>
+            <span class="ctx">Montre que le même levier fonctionne sur un autre secteur, utile pour un réseau multi-enseignes.</span></li>
+        <li><a href="#">Comment les Britanniques sont devenus une clientèle de choix suite au Brexit</a>
+            <span class="ctx">Prolonge le sujet du panier moyen international avec un cas chiffré (+550% de CA détaxé).</span></li>
+      </ul>
+    </aside>
+    <div class="anno"><span class="tag">FIX 08</span><b>Maillage contextuel dans le corps de texte.</b> Deux à trois
+      liens insérés dans les paragraphes eux-mêmes, avec une ancre descriptive et une ligne de contexte, pas seulement
+      des cartes en bas de page.
+      <span class="was">Aucun lien contextuel dans le corps de l'article. Le seul maillage est une série de cartes
+      "actualités" en pied de page, chacune truffée de deux à trois liens vers la même destination (image sans texte,
+      titre, puis bouton), avec l'ancre générique "Découvrir l'actualité" identique sur les cinq cartes.</span></div>
+
+    <h2 id="faq">Questions fréquentes sur la détaxe</h2>
+    <div class="faq" data-fix>
+      <details open>
+        <summary>Quels sont les avantages de la détaxe pour une boutique de mode ?</summary>
+        <div class="a"><p>La détaxe augmente le panier moyen, facilite la décision d'achat sur des produits premium
+          et renforce l'image internationale de la boutique.</p></div>
+      </details>
+      <details>
+        <summary>Comment proposer la détaxe à ses clients internationaux ?</summary>
+        <div class="a"><p>Avec SolPay, la détaxe s'intègre simplement au parcours de vente, sans complexifier le
+          travail des équipes ni ralentir l'encaissement.</p></div>
+      </details>
+      <details>
+        <summary>Quels documents dois-je demander pour établir une détaxe ?</summary>
+        <div class="a"><p>Le passeport original du client est indispensable pour vérifier son éligibilité à la
+          détaxe et établir un bordereau conforme. Le cas échéant, un justificatif de domicile hors UE peut être
+          demandé. Les informations saisies doivent strictement correspondre au document présenté.</p></div>
+      </details>
+      <details>
+        <summary>À quels clients puis-je proposer la vente en détaxe ?</summary>
+        <div class="a"><p>En France, la détaxe est proposée aux voyageurs âgés de 16 ans ou plus, résidant hors Union
+          européenne et séjournant en France moins de 6 mois. En Belgique, elle est proposée aux voyageurs résidant
+          hors Union européenne. Ces critères doivent être vérifiés en caisse avant toute vente.</p></div>
+      </details>
+      <details>
+        <summary>Que dit le gouvernement sur la détaxe ?</summary>
+        <div class="a"><p>La procédure de détaxe en France est encadrée par la fiche Service-Public, et la procédure
+          en Belgique par le SPF Finances (voir sources ci-dessous).</p></div>
+      </details>
+    </div>
+    <div class="anno"><span class="tag">FIX 06</span><b>Balisage FAQPage.</b> Même contenu, marqué en JSON-LD
+      <span class="mono">FAQPage</span> pour permettre le rich result question/réponse et la reprise verbatim par
+      ChatGPT ou Perplexity.
+      <span class="ok">L'accordéon existe déjà à l'identique sur la page en ligne, cinq questions/réponses réelles,
+      correctement structurées en <span class="mono">&lt;details&gt;</span>.</span>
+      <span class="was">Le composant HTML est propre, mais la page ne contient aucun schema <span class="mono">FAQPage</span>.
+      Ce contenu ne peut donc générer aucun rich result ni aucune extraction FAQ, alors que le travail éditorial est
+      déjà fait.</span></div>
+
+    <h2 id="sources">Sources</h2>
+    <div class="sources" data-fix>
+      <ol>
+        <li>Service-Public.fr, <a href="https://entreprendre.service-public.gouv.fr/vosdroits/F20558">Vente en détaxe aux touristes</a>, procédure française.</li>
+        <li>SPF Finances Belgique, <a href="https://fin.belgium.be/fr/particuliers/international/voyager-bagages/voyager-dehors-ue/restitution-tva">Restitution de la TVA</a>, procédure belge.</li>
+        <li>Atout France, données sur les dépenses shopping des touristes internationaux, citées dans l'article.</li>
+      </ol>
+    </div>
+    <div class="anno"><span class="tag">FIX 07</span><b>Ancres descriptives.</b> Le texte du lien décrit la
+      destination plutôt que de répéter l'URL brute.
+      <span class="ok">Les deux sources gouvernementales sont déjà correctement liées en <span class="mono">&lt;a href&gt;</span>,
+      ce n'est pas un lien manquant.</span>
+      <span class="was">Le texte visible du lien est l'URL complète elle-même
+      ("https://entreprendre.service-public.gouv.fr/vosdroits/F20558."), jamais un intitulé lisible comme "la fiche
+      Service-Public sur la détaxe". Une ancre illisible aide moins un lecteur et n'apporte aucun signal thématique
+      au lien.</span></div>
+
+    <details class="changelog" data-fix>
+      <summary>Historique de mise à jour</summary>
+      <div class="body">
+        <dl>
+          <dt>6 août 2026</dt>
+          <dd>Date de mise à jour existante dans le code de la page (à documenter publiquement une fois ce type de
+            bloc ajouté).</dd>
+          <dt>15 juillet 2026</dt>
+          <dd>Première publication.</dd>
+        </dl>
+      </div>
+    </details>
+    <div class="anno"><span class="tag">FIX 09</span><b>Historique public.</b> Publier le changelog rend la
+      fraîcheur du contenu vérifiable plutôt que simplement déclarée dans le code.
+      <span class="was">Aucun historique visible sur la page. Le lecteur ne peut pas savoir ce qui a changé entre la
+      publication et la mise à jour du 6 août.</span></div>
+
+    <section class="authorbox" data-fix>
+      <span class="avatar" aria-hidden="true">IA</span>
+      <div>
+        <h4>Iliana Ayouzy</h4>
+        <div class="role">Rôle et expertise à préciser par SolPay</div>
+        <p>Auteure de l'article selon les données structurées de la page. Aucune bio, aucune fonction ni aucun profil
+          professionnel ne sont publiés à ce jour : ces informations restent à fournir par SolPay pour construire un
+          véritable signal E-E-A-T.</p>
+        <div class="authorlinks">
+          <a href="#">Page auteur à créer</a>
+        </div>
+      </div>
+    </section>
+    <div class="anno"><span class="tag">FIX 02</span><b>Encart auteur.</b> Photo, fonction, expertise, page auteur
+      dédiée. Associé à un schema <span class="mono">Person</span>, c'est ce qui transforme un contenu générique en
+      source attribuable.
+      <span class="was">Le nom de l'auteure existe dans le schema mais n'apparaît nulle part sur la page. Sur un
+      contenu qui influence une décision d'achat B2B, rien ne signale qui porte l'information.</span></div>
+
+    <details class="schema" data-fix>
+      <summary>Structured data cible pour cet article</summary>
+<pre>{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Article",
+      "headline": "Pourquoi les boutiques de prêt-à-porter ont tout à gagner avec la détaxe ?",
+      "datePublished": "2026-07-15T12:20:50+00:00",
+      "dateModified": "2026-08-06T15:24:40+00:00",
+      "inLanguage": "fr",
+      "author": {"@type":"Person","name":"Iliana Ayouzy",
+                 "url":"https://solpay.com/auteurs/iliana-ayouzy"},
+      "publisher": {"@type":"Organization","name":"SolPay",
+                    "url":"https://solpay.com/"}
+    },
+    { "@type": "FAQPage", "mainEntity": [
+        {"@type":"Question","name":"Quels sont les avantages de la détaxe pour une boutique de mode ?",
+         "acceptedAnswer":{"@type":"Answer","text":"La détaxe augmente le panier moyen, facilite la décision d'achat sur des produits premium et renforce l'image internationale de la boutique."}}
+    ]}
+  ]
+}</pre>
+    </details>
+    <div class="anno"><span class="tag">FIX 10</span><b>Schema complet.</b> Le schema <span class="mono">Article</span>
+      existe déjà sur la page (avec dates et auteur), mais il n'y a aucun schema <span class="mono">FAQPage</span>
+      malgré cinq questions/réponses prêtes à l'emploi, et l'auteur n'a pas de page dédiée à référencer en
+      <span class="mono">sameAs</span>.</div>
+
+    <section class="cta">
+      <div>
+        <h3>Offrez à votre boutique de prêt-à-porter une détaxe en toute simplicité</h3>
+        <p>Contenu identique à l'appel à l'action déjà présent sur l'article original.</p>
+      </div>
+      <a class="btn" href="#">Découvrez nos solutions</a>
+    </section>
+
+  </article>
+  </main>
+
+  <aside class="rail">
+    <div class="rail-card" data-fix>
+      <h4>Sur cette page</h4>
+      <ul class="toc">
+        <li><a href="#pilier">La mode, pilier des dépenses touristiques</a></li>
+        <li><a href="#levier">La détaxe, levier d'achat</a></li>
+        <li><a href="#experience">Un enjeu d'expérience</a></li>
+        <li><a href="#solpay">Comment SolPay accompagne</a></li>
+        <li><a href="#resume">En résumé</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ul>
+    </div>
+
+    <div class="rail-card">
+      <h4>Constat en un coup d'oeil</h4>
+      <p style="font-size:14px;color:var(--grey-3);margin:0">
+        6 éléments totalement absents (FIX 02, 03, 04, 05, 08, 09), 2 éléments déjà présents mais mal exploités
+        (FIX 06, 07), 1 élément présent en base mais invisible à l'écran (FIX 01). Rien à reconstruire depuis zéro :
+        la matière existe déjà dans le code ou dans le texte.
+      </p>
+    </div>
+  </aside>
+
+  </div>
+
+  <footer>
+    <div class="mono" style="letter-spacing:.08em;text-transform:uppercase;color:var(--grey-2)">
+      Maquette d'audit — article SolPay
+    </div>
+    <p style="margin-top:10px">Construit par <a href="https://www.datashake.fr">datashake</a> à partir du contenu réel
+      de l'article publié sur solpay.com. Document de travail pour le pré-audit SEO/GEO, non publié sur le site du
+      client, non contractuel.</p>
+  </footer>
+</div>
+
+<div class="anno-bar">
+  <span>Annotations SEO/GEO</span>
+  <button id="toggle" type="button" aria-pressed="true">Activées</button>
+</div>
+
+<script>
+(function(){
+  var b=document.getElementById('toggle');
+  b.addEventListener('click',function(){
+    var on=document.body.classList.toggle('anno-on');
+    b.textContent=on?'Activées':'Désactivées';
+    b.setAttribute('aria-pressed',String(on));
+  });
+})();
+</script>
+</body>
+</html>
