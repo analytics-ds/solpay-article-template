@@ -228,17 +228,17 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 .dsaudit-hide{display:none}
 body.dsaudit-on .dsaudit-anno{display:block}
 body.dsaudit-on [data-dsaudit-fix]{outline:2px dashed #1b6ef3;outline-offset:8px;border-radius:8px}
-.dsaudit-topbar{position:sticky;top:0;z-index:9999;background:#101010;color:#fff;font-family:Roboto,Arial,sans-serif;
-  font-size:13.5px;padding:9px 18px;text-align:center;letter-spacing:.01em}
-.dsaudit-topbar b{color:#8fb8fb}
-.dsaudit-banner{max-width:900px;margin:28px auto 0;background:#101010;color:#efece8;border-radius:20px;
-  padding:26px 28px;font-family:Roboto,Arial,sans-serif}
-.dsaudit-banner h2{color:#fff;font-size:20px;margin:0 0 8px;font-weight:600}
-.dsaudit-banner p{color:#c9c5c1;font-size:14.5px;line-height:1.55;margin:0}
+.dsaudit-banner.dsaudit-anno{display:none;max-width:900px;margin:28px auto 0;background:#101010 !important;
+  color:#efece8;border-radius:20px;padding:26px 28px;font-family:Roboto,Arial,sans-serif;border-left:none}
+body.dsaudit-on .dsaudit-banner.dsaudit-anno{display:block}
+.dsaudit-banner h2{color:#fff !important;font-size:20px;margin:0 0 8px;font-weight:600}
+.dsaudit-banner p{color:#c9c5c1 !important;font-size:14.5px;line-height:1.55;margin:0}
 .dsaudit-banner ul{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
 .dsaudit-banner li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;
   padding:9px 12px;font-size:13px;color:#efece8}
 .dsaudit-banner li span{display:block;font-family:ui-monospace,monospace;font-size:10.5px;color:#8fb8fb;margin-bottom:2px}
+.dsaudit-footer-credit{max-width:900px;margin:40px auto 60px;padding:20px 0 0;border-top:1px solid #e9e5e1;
+  font-family:Roboto,Arial,sans-serif;font-size:13.5px;color:#8c8680;line-height:1.6}
 .dsaudit-anno{display:none;max-width:660px;margin:12px auto 24px;border-left:3px solid #1b6ef3;
   background:rgba(27,110,243,.07);border-radius:0 10px 10px 0;padding:13px 16px;font-family:Roboto,Arial,sans-serif;
   font-size:14px;line-height:1.55;color:#4a4642}
@@ -303,9 +303,6 @@ body.dsaudit-on [data-dsaudit-fix]{outline:2px dashed #1b6ef3;outline-offset:8px
 </head>
 
 <body class="wp-singular post-template-default single single-post postid-5015 single-format-standard wp-embed-responsive wp-theme-latelier-fse dsaudit-on">
-<div class="dsaudit-anno dsaudit-topbar" style="display:block">
-  MAQUETTE D'AUDIT DATASHAKE — base = template reel de solpay.com, non publiee sur le site du client
-</div>
 <div class="dsaudit-anno dsaudit-banner">
   <h2>Version annotee de cet article</h2>
   <p>Le contenu, la mise en page et le theme ci-dessous sont ceux reellement en ligne sur solpay.com. Les blocs
@@ -1549,6 +1546,9 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
 //# sourceURL=https://solpay.com/wp-includes/js/wp-emoji-loader.min.js
 </script>
 <script data-no-delay-js>!function(){var released=false,events=["scroll","mousemove","mouseover","resize","touchstart","touchmove","keydown","wheel"],timeout=8000;function makeEvent(name){try{return new Event(name,{bubbles:true,cancelable:true})}catch(e){var event=document.createEvent("Event");return event.initEvent(name,true,true),event}}function callListener(target,name,listener){window.setTimeout(function(){if("function"==typeof listener){listener.call(target,makeEvent(name))}else if(listener&&"function"==typeof listener.handleEvent){listener.handleEvent.call(listener,makeEvent(name))}},0)}function copyAttributes(from,to){[].slice.call(from.attributes).forEach(function(attr){/^data-delay/.test(attr.name)||"type"===attr.name||"src"===attr.name||to.setAttribute(attr.name,attr.value)})}function loadScripts(scripts,index,done){var current=scripts[index];if(!current){done();return}var next=document.createElement("script");copyAttributes(current,next);next.type=current.getAttribute("data-delay-type")||"text/javascript";if(current.dataset.delaySrc){next.onload=next.onerror=function(){loadScripts(scripts,index+1,done)};next.src=current.dataset.delaySrc;current.parentNode.insertBefore(next,current.nextSibling)}else{next.text=current.text||current.textContent||"";current.parentNode.insertBefore(next,current.nextSibling);loadScripts(scripts,index+1,done)}current.parentNode.removeChild(current)}function releaseDelayed(){if(released)return;released=true;events.forEach(function(eventName){window.removeEventListener(eventName,releaseDelayed,{passive:true})});var scripts=[].slice.call(document.querySelectorAll("script[data-delay-js]"));var originalDocumentAdd=document.addEventListener;var originalWindowAdd=window.addEventListener;if(document.readyState!=="loading"){document.addEventListener=function(type,listener,options){if(type==="DOMContentLoaded"){callListener(document,type,listener);return}return originalDocumentAdd.call(document,type,listener,options)}}window.addEventListener=function(type,listener,options){if(type==="load"){callListener(window,type,listener);return}return originalWindowAdd.call(window,type,listener,options)};loadScripts(scripts,0,function(){document.addEventListener=originalDocumentAdd;window.addEventListener=originalWindowAdd})}events.forEach(function(eventName){window.addEventListener(eventName,releaseDelayed,{passive:true})});window.setTimeout(releaseDelayed,timeout)}();</script>
+<p class="dsaudit-footer-credit">Construit par datashake a partir du theme de production reel de solpay.com.
+Structure, textes, couleurs et polices lus depuis le theme WordPress <span style="font-family:ui-monospace,monospace">latelier-fse</span>.
+Maquette d'audit, non publiee sur le site du client, chiffres non contractuels.</p>
 <div class="dsaudit-toggle">
   <span>Annotations audit</span>
   <button id="dsaudit-toggle-btn" type="button" aria-pressed="true">Activees</button>
