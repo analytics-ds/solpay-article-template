@@ -279,6 +279,26 @@ body.dsaudit-on [data-dsaudit-fix]{outline:2px dashed #1b6ef3;outline-offset:8px
   font-family:Roboto,Arial,sans-serif;font-size:13px}
 .dsaudit-toggle button{font-family:Roboto,Arial,sans-serif;font-weight:700;font-size:12.5px;cursor:pointer;border:0;
   border-radius:999px;padding:7px 14px;background:#1b6ef3;color:#fff}
+
+/* byline reelle, ajoutee (pas juste decrite) */
+.dsaudit-byline{max-width:660px;margin:18px auto 0;display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;
+  padding:16px 0;border-top:1px solid #e9e5e1;border-bottom:1px solid #e9e5e1;font-family:Roboto,Arial,sans-serif;
+  font-size:14px;color:#4a4642}
+.dsaudit-byline .dsaudit-who{display:flex;align-items:center;gap:10px}
+.dsaudit-byline .dsaudit-avatar{width:38px;height:38px;font-size:13px}
+.dsaudit-byline strong{display:block;color:#101010;font-weight:600;line-height:1.3}
+.dsaudit-byline .dsaudit-role{font-size:12.5px;color:#8c8680}
+.dsaudit-pill{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid #e9e5e1;
+  border-radius:999px;padding:5px 12px;font-size:13px}
+.dsaudit-pill.fresh{border-color:#1b6ef3;background:rgba(27,110,243,.08);font-weight:600}
+
+/* encart en bref, ajoute (pas juste decrit) */
+.dsaudit-brief{max-width:660px;margin:24px auto 0;background:#fff;border:1px solid #d8c9b8;border-left:4px solid #1b6ef3;
+  border-radius:16px;padding:22px 24px;font-family:Roboto,Arial,sans-serif}
+.dsaudit-brief h2{margin:0 0 6px;font-size:18px;font-weight:600;color:#101010}
+.dsaudit-brief .dsaudit-answer{background:#f3ede8;border-radius:10px;padding:13px 15px;margin:12px 0 14px;font-size:15px;color:#101010}
+.dsaudit-brief ul{margin:0;padding-left:18px;color:#4a4642;font-size:14.5px}
+.dsaudit-brief li{margin-bottom:7px}
 </style>
 </head>
 
@@ -288,9 +308,10 @@ body.dsaudit-on [data-dsaudit-fix]{outline:2px dashed #1b6ef3;outline-offset:8px
 </div>
 <div class="dsaudit-anno dsaudit-banner">
   <h2>Version annotee de cet article</h2>
-  <p>Le contenu, la mise en page et le theme ci-dessous sont ceux reellement en ligne sur solpay.com. Seuls les
-  encadres bordes de bleu ont ete ajoutes pour ce pre-audit : ils marquent les elements structurels et SEO/GEO a
-  ajouter ou corriger. Bouton en bas a droite pour les activer/desactiver.</p>
+  <p>Le contenu, la mise en page et le theme ci-dessous sont ceux reellement en ligne sur solpay.com. Les blocs
+  a fond blanc bordes de bleu (byline, encart en bref, tableau, encart auteur) sont de vrais elements ajoutes,
+  pas de simples descriptions. Les encadres bleu clair sont les explications d'audit. Bouton en bas a droite pour
+  activer/desactiver les annotations et les pointilles.</p>
   <ul>
     <li><span>FIX 01</span>Dates affichees (publication + mise a jour)</li>
     <li><span>FIX 02</span>Auteur affiche sur la page</li>
@@ -696,16 +717,55 @@ body.dsaudit-on [data-dsaudit-fix]{outline:2px dashed #1b6ef3;outline-offset:8px
 
 <div class="wp-block-group is-vertical is-nowrap is-layout-flex wp-container-core-group-is-layout-999b42dd wp-block-group-is-layout-flex">
 <h1 class="wp-block-heading" style="text-transform:uppercase">Pourquoi les boutiques de prêt-à-porter ont tout à gagner avec la détaxe ?</h1>
+<div class="dsaudit-byline" data-dsaudit-fix>
+  <span class="dsaudit-who">
+    <span class="dsaudit-avatar" aria-hidden="true">IA</span>
+    <span><strong>Iliana Ayouzy</strong><span class="dsaudit-role">Auteure — role a preciser par SolPay</span></span>
+  </span>
+  <span class="dsaudit-pill">Publie le <time datetime="2026-07-15">15 juillet 2026</time></span>
+  <span class="dsaudit-pill fresh">Mis a jour le <time datetime="2026-08-06">6 aout 2026</time></span>
+  <span class="dsaudit-pill">5 min de lecture</span>
+</div>
 <div class="dsaudit-anno" data-dsaudit-fix>
   <span class="dsaudit-tag">FIX 01 · 02 · 04</span>
-  <b>Bloc signature manquant.</b> Ajouter sous le titre : auteur nomme, date de publication et de mise a jour en
-  <span style="font-family:ui-monospace,monospace">&lt;time datetime&gt;</span>, temps de lecture estime.
+  <b>Bloc signature ajoute ci-dessus.</b> Auteur nomme, date de publication et de mise a jour en
+  <span style="font-family:ui-monospace,monospace">&lt;time datetime&gt;</span>, temps de lecture estime : les
+  quatre signaux que la page en ligne ne montre pas aujourd'hui.
   <span class="dsaudit-ok">La date de publication (15 juillet 2026), la date de mise a jour (6 aout 2026) et le nom
-  de l'auteure (Iliana Ayouzy) existent deja dans le code de la page (donnees structurees Article). Elles ne sont
-  simplement affichees nulle part a l'ecran.</span>
-  <span class="dsaudit-was">Aucune date, aucun auteur, aucun temps de lecture visibles pour le lecteur. Sur un sujet
-  ou les regles de detaxe evoluent, rien ne permet de savoir si la page est a jour, et Google n'a aucune entite
-  auteur a rattacher au contenu.</span>
+  de l'auteure (Iliana Ayouzy) existaient deja dans le code de la page (donnees structurees Article), simplement
+  jamais affiches a l'ecran. Le temps de lecture (5 min, calcule sur les ~950 mots de l'article) est le seul
+  chiffre ajoute ici de toutes pieces.</span>
+  <span class="dsaudit-was">Sur la page en ligne : aucune date, aucun auteur, aucun temps de lecture visibles pour
+  le lecteur. Sur un sujet ou les regles de detaxe evoluent, rien ne permettait de savoir si la page etait a jour,
+  et Google n'avait aucune entite auteur a rattacher au contenu.</span>
+</div>
+
+<section class="dsaudit-brief" data-dsaudit-fix>
+  <h2>A retenir</h2>
+  <div class="dsaudit-answer">
+    <b>Reponse directe :</b> pour une boutique de pret-a-porter en zone touristique, la detaxe est un levier
+    commercial qui declenche l'achat, augmente le panier moyen des visiteurs hors Union europeenne et favorise la
+    montee en gamme, a condition que le parcours en caisse reste simple et rapide.
+  </div>
+  <ul>
+    <li>Les touristes hors UE ont un panier moyen plus eleve que les touristes europeens, avec une appetence
+      marquee pour les achats premium en pret-a-porter.</li>
+    <li>Le seuil de detaxe est de 100,01 € TTC d'achats le meme jour chez un meme commercant.</li>
+    <li>Un parcours de detaxe lent ou complexe en caisse peut faire perdre la vente ; un parcours digitalise la
+      transforme en argument de vente.</li>
+    <li>SolPay, operateur agree par la douane francaise depuis 2008, propose une solution digitale gratuite pour
+      les commercants.</li>
+  </ul>
+</section>
+<div class="dsaudit-anno" data-dsaudit-fix>
+  <span class="dsaudit-tag">FIX 03</span>
+  <b>Encart "a retenir" ajoute ci-dessus.</b> Il ouvre sur une reponse autonome de 40 a 60 mots qui nomme le sujet
+  et la conclusion : c'est ce paragraphe qu'un Apercu IA, ChatGPT ou Perplexity reprend en priorite. Les puces qui
+  suivent reprennent les faits deja presents plus bas dans l'article, chacun extractible seul.
+  <span class="dsaudit-was">Aucun encart de ce type sur la page en ligne. La reponse a "pourquoi la detaxe est
+  utile a une boutique de mode" etait diluee sur 950 mots de texte courant, sans paragraphe autonome a citer. Le
+  bouton "Resumer cet article" plus bas renvoie vers ChatGPT/Claude/Mistral, ce n'est pas un substitut a un vrai
+  encart editorial.</span>
 </div>
 </div>
 
@@ -768,9 +828,9 @@ body.dsaudit-on [data-dsaudit-fix]{outline:2px dashed #1b6ef3;outline-offset:8px
 <p class="has-medium-font-size wp-block-paragraph">D’après les données publiques du tourisme, les visiteurs hors UE ont un panier moyen nettement supérieur à celui des touristes européens, et sont plus enclins à réaliser des achats premium, notamment dans les boutiques de mode et concept stores.</p>
 <div class="dsaudit-anno" data-dsaudit-fix>
   <span class="dsaudit-tag">FIX 05</span>
-  <b>Tableau structurant absent.</b> Les trois effets de la detaxe decrits plus haut dans l'article (declenchement
-  de l'achat, panier moyen, montee en gamme) existent deja dans le texte mais restent noyes dans un paragraphe de
-  prose. Les poser en tableau les rend extractibles pour un featured snippet ou un Apercu IA :
+  <b>Tableau structurant ajoute ci-dessous.</b> Les trois effets de la detaxe decrits plus haut dans l'article
+  (declenchement de l'achat, panier moyen, montee en gamme) existent deja dans le texte mais restent noyes dans un
+  paragraphe de prose. Les poser en tableau les rend extractibles pour un featured snippet ou un Apercu IA.
 </div>
 <div class="dsaudit-table-wrap" data-dsaudit-fix>
   <table>
@@ -1229,15 +1289,10 @@ body.dsaudit-on [data-dsaudit-fix]{outline:2px dashed #1b6ef3;outline-offset:8px
     <div class="dsaudit-role">Role et expertise a preciser par SolPay</div>
     <p>Auteure de l'article selon les donnees structurees de la page. Aucune bio, aucune fonction, aucun profil
     professionnel ne sont publies a ce jour : ces informations restent a fournir par SolPay pour construire un
-    veritable signal E-E-A-T.</p>
+    veritable signal E-E-A-T. Reprise ici en bas de page, en complement de la signature deja affichee en tete
+    d'article.</p>
   </div>
 </section>
-<div class="dsaudit-anno" data-dsaudit-fix>
-  <span class="dsaudit-tag">FIX 02</span>
-  <b>Encart auteur manquant.</b> Photo, fonction, expertise et page auteur dediee, associes a un schema
-  <span style="font-family:ui-monospace,monospace">Person</span>. Sur un contenu qui influence une decision d'achat
-  B2B, rien ne signale aujourd'hui qui porte l'information.
-</div>
 
 <details class="dsaudit-changelog" data-dsaudit-fix>
   <summary>Historique de mise a jour</summary>
